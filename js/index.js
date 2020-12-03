@@ -87,3 +87,41 @@ head4[4].textContent = siteContent["main-content"]["vision-h4"];
 const midImg = document.querySelector(".middle-img");
 midImg.src = siteContent["main-content"]["middle-img-src"];
 
+//contact
+const newH4 = document.querySelector(".contact h4");
+newH4.textContent = siteContent.contact["contact-h4"];
+
+const contact = document.querySelectorAll(".contact p");
+
+contact[0].textContent = siteContent.contact["address"];
+contact[1].textContent = siteContent.contact["phone"];
+contact[2].textContent = siteContent.contact["email"];
+
+const footer = document.querySelector("footer p");
+footer.textContent = siteContent.footer["copyright"];
+
+//added content
+navItems.forEach((anchor) => {
+  anchor.style.color = "green";
+});
+
+const navEl = document.createElement("a");
+navEl.textContent = "Mailing List";
+navEl.style.color = "green";
+
+const nav = document.querySelector("nav");
+nav.append(navEl);
+
+const navEl2 = document.createElement("a");
+navEl2.textContent = "Social Media";
+navEl2.style.color = "green";
+
+const nav2 = document.querySelector("nav");
+nav.prepend(navEl2);
+
+//stretch
+const background = document.querySelector("body");
+background.style.backgroundColor = "#FFC0CB";
+
+const buttonColor = document.querySelector("button");
+buttonColor.style.backgroundColor = "green";
