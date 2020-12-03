@@ -118,3 +118,10 @@ navEl2.style.color = "green";
 
 const nav2 = document.querySelector("nav");
 nav.prepend(navEl2);
+
+//stretch
+const background = document.querySelector("body");
+background.style.backgroundColor = "#FFC0CB";
+
+const buttonColor = document.querySelector("button");
+buttonColor.style.backgroundColor = "green";
