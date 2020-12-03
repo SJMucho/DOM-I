@@ -47,9 +47,9 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
 //nav
+//nav
 const navItems = document.querySelectorAll("nav a");
 console.log(navItems);
-
 navItems[0].textContent = siteContent.nav["nav-item-1"];
 navItems[1].textContent = siteContent.nav["nav-item-2"];
 navItems[2].textContent = siteContent.nav["nav-item-3"];
@@ -57,9 +57,9 @@ navItems[3].textContent = siteContent.nav["nav-item-4"];
 navItems[4].textContent = siteContent.nav["nav-item-5"];
 navItems[5].textContent = siteContent.nav["nav-item-6"];
 
-//header
-const header = document.querySelector("h1");
-header.textContent = siteContent.cta["h1"];
+//dom
+const domHeader = document.querySelector("h1");
+domHeader.textContent = siteContent.cta["h1"];
 
 //code
 const codeSnippet = document.getElementById("cta-img");
@@ -69,4 +69,21 @@ codeSnippet.src = siteContent.cta["img-src"];
 const button = document.querySelector("button");
 button.textContent = siteContent.cta["button"];
 
+//content
+const par = document.querySelectorAll(".text-content p");
+par[0].textContent = siteContent["main-content"]["features-content"];
+par[1].textContent = siteContent["main-content"]["about-content"];
+par[2].textContent = siteContent["main-content"]["services-content"];
+par[3].textContent = siteContent["main-content"]["product-content"];
+par[4].textContent = siteContent["main-content"]["vision-content"];
+
+const head4 = document.querySelectorAll(".main-content h4");
+head4[0].textContent = siteContent["main-content"]["features-h4"];
+head4[1].textContent = siteContent["main-content"]["about-h4"];
+head4[2].textContent = siteContent["main-content"]["services-h4"];
+head4[3].textContent = siteContent["main-content"]["product-h4"];
+head4[4].textContent = siteContent["main-content"]["vision-h4"];
+
+const midImg = document.querySelector(".middle-img");
+midImg.src = siteContent["main-content"]["middle-img-src"];
 
